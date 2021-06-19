@@ -18,8 +18,8 @@ GPIO.setup(servoPIN, GPIO.OUT)
 
 p = GPIO.PWM(servoPIN, .5)  # GPIO 17 for PWM with 50Hz
 p.start(2.5)  # Initialization
+print("start")
 try:
-    print("start")
   while True:
     # p.ChangeDutyCycle(5)
     # time.sleep(0.5)
