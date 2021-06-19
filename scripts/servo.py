@@ -24,7 +24,7 @@ p.start(2.5)  # Initialization
 print("start")
 try:
   while True:
-    print('Run')
+    # print('Run')
 
     # p.ChangeDutyCycle(5)
     # time.sleep(0.5)
@@ -44,11 +44,12 @@ try:
     # time.sleep(0.5)
     p.start(1)
 
-    if freq < _maxfreq
+    if freq < _maxfreq:
       freq += 50
     else:
       freq = _ogfreq
-      
+    
+    print(freq)
     p.ChangeFrequency(freq)   # where freq is the new frequency in Hz    # input('Press return to stop:')   # use raw_input for Python 2
     # p.stop()
     # GPIO.cleanup()
