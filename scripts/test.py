@@ -1,14 +1,22 @@
 import sys;
 
-# def biglogs():
-#     print("im logging a log")
+# Invoke function as is
+def biglogs():
+    print("im logging a log")
 
-# if __name__ == '__main__':
-#     globals()[sys.argv[1]]()
 
 # Take input from cli; pass as arg
 def input(mystring):
     print(mystring)
+
+
+
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
