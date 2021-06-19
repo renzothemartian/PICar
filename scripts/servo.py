@@ -53,16 +53,16 @@ try:
     else:
       freq = _ogfreq
     
-    print(freq)
+    print("frequency: " freq)
     p.ChangeFrequency(freq)   # where freq is the new frequency in Hz    # input('Press return to stop:')   # use raw_input for Python 2
     
     
-    if _dutycycle < _maxdutycycle:
-      _dutycycle +=20
+    if _dutycycle + 20 =< _maxdutycycle:
+      _dutycycle += 20
     else:
       _dutycycle = _ogdutycycle
 
-    print(_dutycycle)
+    print("duty cycle: " _dutycycle)
     p.ChangeDutyCycle(_dutycycle)  # where 0.0 <= dc <= 100.0
     time.sleep(1.5)
 
