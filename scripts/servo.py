@@ -16,7 +16,7 @@ servoPIN = 17
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(servoPIN, GPIO.OUT)
 freq = 120
-_ogfreq = 1
+_ogfreq = 20
 _maxfreq = 1000
 
 p = GPIO.PWM(servoPIN, 120)  # GPIO 17 for PWM with 50Hz
