@@ -1,3 +1,6 @@
+# SOURCE
+# https://tutorials-raspberrypi.com/raspberry-pi-servo-motor-control/
+
 import RPi.GPIO as GPIO
 import time
 
