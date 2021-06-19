@@ -1,5 +1,12 @@
-# SOURCE
+# __________________ SOURCE
 # https://tutorials-raspberrypi.com/raspberry-pi-servo-motor-control/
+
+
+# __________________ PINS
+# Black – comes to GND(pin 6) from the Pi
+# Red – comes to 3V3(pin 1) from the Pi
+# Yellow/Orange – to a free GPIO pin(e.g., GPIO17, pin 11)
+
 
 import RPi.GPIO as GPIO
 import time
