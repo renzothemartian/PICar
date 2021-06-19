@@ -16,7 +16,7 @@ servoPIN = 17
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(servoPIN, GPIO.OUT)
 
-p = GPIO.PWM(servoPIN, .5)  # GPIO 17 for PWM with 50Hz
+p = GPIO.PWM(servoPIN, 120)  # GPIO 17 for PWM with 50Hz
 p.start(2.5)  # Initialization
 print("start")
 try:
