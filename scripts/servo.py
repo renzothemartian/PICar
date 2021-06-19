@@ -15,6 +15,9 @@ import time
 servoPIN = 17
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(servoPIN, GPIO.OUT)
+freq = 120
+_ogfreq = 120
+_maxfreq = 300
 
 p = GPIO.PWM(servoPIN, 120)  # GPIO 17 for PWM with 50Hz
 p.start(2.5)  # Initialization
@@ -22,6 +25,7 @@ print("start")
 try:
   while True:
     print('Run')
+
     # p.ChangeDutyCycle(5)
     # time.sleep(0.5)
     # p.ChangeDutyCycle(7.5)
@@ -39,7 +43,13 @@ try:
     # p.ChangeDutyCycle(2.5)
     # time.sleep(0.5)
     p.start(1)
-    # input('Press return to stop:')   # use raw_input for Python 2
+
+    if freq < _maxfreq
+      freq += 50
+    else:
+      freq = _ogfreq
+      
+    p.ChangeFrequency(freq)   # where freq is the new frequency in Hz    # input('Press return to stop:')   # use raw_input for Python 2
     # p.stop()
     # GPIO.cleanup()
 except KeyboardInterrupt:
