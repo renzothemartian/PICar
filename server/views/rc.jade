@@ -1,6 +1,8 @@
 extends layout
-
 block content
   h1= title
   p RC PAGE: #{title}
   p PAGE_DATA: #{pageData}
+  button(onclick='{leftButton()}') Click
+  form(method="post" action="/rc")
+    button(type="submit") run foo

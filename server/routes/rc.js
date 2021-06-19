@@ -10,7 +10,7 @@ const {
 router.get('/', function (req, res, next) {
     // let result = doThings();
     app().then((result) => {
-        console.log(`post: ${result}`)
+        // console.log(`post: ${result}`)
         res.render('rc', {
             title: 'RC',
             pageData: `${result}`
@@ -18,6 +18,19 @@ router.get('/', function (req, res, next) {
 
     });
 });
+
+
+router.post('/', function (req, res, next) {
+    // let result = doThings();
+
+    console.log("we postin g post");
+    // res.send(200);
+    res.render('rc', {
+        title: 'RC',
+        // pageData: `${result}`
+    });
+});
+
 
 
 async function operation() {
@@ -38,7 +51,7 @@ async function operation() {
         python.on('close', (code) => {
             // send data to browser
             dataToSend = largeDataSet.join('')
-            console.log(`pre: ${dataToSend}`)
+            // console.log(`pre: ${dataToSend}`)
             resolve(dataToSend) // successfully fill promise
         })
 
