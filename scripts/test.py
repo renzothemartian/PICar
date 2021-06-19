@@ -1,8 +1,8 @@
 import sys;
 
 # Invoke function as is
-def biglogs():
-    print("im logging a log")
+def status():
+    print("you checked status")
 
 
 # Take input from cli; pass as arg
@@ -20,7 +20,7 @@ def input(mystring):
 
 
 if __name__ == '__main__':
-    if sys.argv[1] == 'biglogs':
+    if sys.argv[1] == 'status':
         globals()[sys.argv[1]]()
     else:
         globals()[sys.argv[1]](sys.argv[2])
