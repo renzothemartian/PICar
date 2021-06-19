@@ -8,6 +8,7 @@
 # Yellow/Orange – to a free GPIO pin(e.g., GPIO17, pin 11)
 
 
+# https: // pypi.org/project/RPi.GPIO/
 import RPi.GPIO as GPIO
 import time
 
