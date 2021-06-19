@@ -4,8 +4,8 @@ pi@192.168.1.299
 
 
 ## dependencies
-
-[pwm](https://sourceforge.net/p/raspberry-gpio-python/wiki/PWM/)
+### Pulse Width Modulation
+- [pwm](https://sourceforge.net/p/raspberry-gpio-python/wiki/PWM/)
 
 
 ## INSTALL
