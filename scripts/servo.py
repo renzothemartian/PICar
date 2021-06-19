@@ -51,7 +51,7 @@ try:
     
     print(freq)
     p.ChangeFrequency(freq)   # where freq is the new frequency in Hz    # input('Press return to stop:')   # use raw_input for Python 2
-    time.sleep(3)
+    time.sleep(1.5)
 
 except KeyboardInterrupt:
   print("stop")
