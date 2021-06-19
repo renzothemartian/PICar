@@ -11,7 +11,7 @@ def input(mystring):
 
 
 
-
+status()
 
 
 
