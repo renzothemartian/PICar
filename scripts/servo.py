@@ -21,6 +21,7 @@ p.start(2.5)  # Initialization
 print("start")
 try:
   while True:
+    print('Run')
     # p.ChangeDutyCycle(5)
     # time.sleep(0.5)
     # p.ChangeDutyCycle(7.5)
