@@ -19,8 +19,8 @@ freq = 120
 _ogfreq = 20
 _maxfreq = 1000
 
-_dutycycle = 5
-_ogdutycycle = 5
+_dutycycle = 0.5
+_ogdutycycle = 0.5
 _maxdutycycle = 100
 
 p = GPIO.PWM(servoPIN, 120)  # GPIO 17 for PWM with 50Hz
