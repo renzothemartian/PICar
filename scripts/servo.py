@@ -19,7 +19,7 @@ freq = 120
 _ogfreq = 20
 _maxfreq = 1000
 
-_dutycycle = 100
+_dutycycle = 1
 _ogdutycycle = 0.5
 _maxdutycycle = 100
 
