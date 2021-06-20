@@ -22,7 +22,7 @@ _maxfreq = 1000
 
 _dutycycle = 1
 _ogdutycycle = 0.1
-_maxdutycycle = 10
+_maxdutycycle = 7
 
 p = GPIO.PWM(servoPIN, 50)  # GPIO 17 for PWM with 50Hz
 
@@ -60,8 +60,8 @@ try:
     # p.ChangeFrequency(freq)   # where freq is the new frequency in Hz    # input('Press return to stop:')   # use raw_input for Python 2
     
     
-    if _dutycycle + 0.1 <= _maxdutycycle:
-      _dutycycle += 0.1
+    if _dutycycle + 0.25 <= _maxdutycycle:
+      _dutycycle += 0.25
     else:
       _dutycycle = _ogdutycycle
     print(f"duty cycle: {_dutycycle}")
