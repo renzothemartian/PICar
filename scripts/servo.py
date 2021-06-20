@@ -15,6 +15,7 @@ import time
 servoPIN = 17
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(servoPIN, GPIO.OUT)
+
 freq = 120
 _ogfreq = 20
 _maxfreq = 1000
@@ -23,11 +24,13 @@ _dutycycle = 1
 _ogdutycycle = 0.5
 _maxdutycycle = 100
 
-p = GPIO.PWM(servoPIN, 120)  # GPIO 17 for PWM with 50Hz
+p = GPIO.PWM(servoPIN, 50)  # GPIO 17 for PWM with 50Hz
+
+p.start(_dutycycle)  # Initialization
+
 print("start")
 try:
   while True:
-    p.start(_dutycycle)  # Initialization
     # print('Run')
 
     # p.ChangeDutyCycle(5)
@@ -48,17 +51,17 @@ try:
     # time.sleep(0.5)
     # p.start(1)
 
-    if freq < _maxfreq:
-      freq += 50
-    else:
-      freq = _ogfreq
+    # if freq < _maxfreq:
+    #   freq += 50
+    # else:
+    #   freq = _ogfreq
     
-    print(f"frequency: {freq}")
-    p.ChangeFrequency(freq)   # where freq is the new frequency in Hz    # input('Press return to stop:')   # use raw_input for Python 2
+    # print(f"frequency: {freq}")
+    # p.ChangeFrequency(freq)   # where freq is the new frequency in Hz    # input('Press return to stop:')   # use raw_input for Python 2
     
     
-    if _dutycycle + 20 <= _maxdutycycle:
-      _dutycycle += 20
+    if _dutycycle + 10 <= _maxdutycycle:
+      _dutycycle += 10
     else:
       _dutycycle = _ogdutycycle
     print(f"duty cycle: {_dutycycle}")
