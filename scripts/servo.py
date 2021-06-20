@@ -46,7 +46,7 @@ try:
     # time.sleep(0.5)
     # p.ChangeDutyCycle(2.5)
     # time.sleep(0.5)
-    p.start(1)
+    # p.start(1)
 
     # if freq < _maxfreq:
     #   freq += 50
